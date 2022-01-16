@@ -24,7 +24,7 @@ with open(args.file) as file:
             pass
 
         d_ips[ip] += 1
-        #dict_ip[ip][method] += 1
+        # dict_ip[ip][method] += 1 # отключено так как не используется
         d_time[time] += 1
         top_ip = Counter(d_ips).most_common(10)
         dict_count_get[method] += 1
